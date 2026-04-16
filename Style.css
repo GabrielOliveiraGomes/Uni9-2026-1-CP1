@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #ff914d;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.Menu h1 {
+    color: white;
+}
+
+.Menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.Menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.Menu ul li a:hover {
+    color: #333;
+}
+
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.Serviços {
+    padding: 40px;
+    text-align: center;
+}
+
+.Serviços h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.cardTosa,
+.cardRação,
+.CardBrinq {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.cardTosa:hover,
+.cardRação:hover,
+.CardBrinq:hover {
+    transform: translateY(-5px);
+}
+
+
+.cardTosa h3,
+.cardRação h3,
+.CardBrinq h3 {
+    color: #ff914d;
+    margin-bottom: 10px;
+}
+
+
+.cardTosa p,
+.cardRação p,
+.CardBrinq p {
+    color: #555;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner img {
+        height: 100px;
+    }
+}
